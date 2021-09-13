@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Specifications — Buildozer 0.11 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/modernizr.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/documentation_options.js"></script>
+        <script type="text/javascript" src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/jquery.js"></script>
+        <script type="text/javascript" src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/underscore.js"></script>
+        <script type="text/javascript" src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/doctools.js"></script>
+        <script type="text/javascript" src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/language_data.js"></script>
+        <script type="text/javascript" src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/readthedocs-doc-embed.js"></script>
+    
+    <script type="text/javascript" src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/theme.css" type="text/css">
+  <link rel="stylesheet" href="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/pygments.css" type="text/css">
+    <link rel="index" title="Index" href="https://buildozer.readthedocs.io/en/latest/genindex.html">
+    <link rel="search" title="Search" href="https://buildozer.readthedocs.io/en/latest/search.html">
+    <link rel="next" title="Contribute" href="https://buildozer.readthedocs.io/en/latest/contribute.html">
+    <link rel="prev" title="Quickstart" href="https://buildozer.readthedocs.io/en/latest/quickstart.html"> 
+
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="https://buildozer.readthedocs.io/en/latest/specifications.html">
+
+<link rel="stylesheet" href="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="text/javascript" src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/readthedocs-data.js"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = "specifications"
+READTHEDOCS_DATA['source_suffix'] = ".rst"
+</script>
+
+<script type="text/javascript" src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/readthedocs-analytics.js"></script>
+
+<!-- end RTD <extrahead> -->
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="https://buildozer.readthedocs.io/en/latest/index.html" class="icon icon-home"> Buildozer
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="https://buildozer.readthedocs.io/en/latest/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://buildozer.readthedocs.io/en/latest/quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 current"><a class="reference internal current" href="#"><span class="toctree-expand"></span>Specifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#section-app">Section [app]</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://buildozer.readthedocs.io/en/latest/contribute.html">Contribute</a></li>
+</ul>
+
+            
+          
+        </div>
+      <div id="rtd-4jlt15t7g" class="ethical-rtd ethical-dark-theme"><div class="ethical-sidebar"><div class="ethical-content"><a href="https://server.ethicalads.io/proxy/click/305/r4riDdVonWEctYqx/" rel="nofollow" target="_blank" class="ethical-image-link"><img src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/readthedocs-logo-fs8_k6Ps9wN.png"></a><div class="ethical-text"><a href="https://server.ethicalads.io/proxy/click/305/r4riDdVonWEctYqx/" rel="nofollow" target="_blank">Private repos and priority support<br>Try Read the Docs for Business Today!</a></div></div><div class="ethical-callout"><small><em><a href="https://readthedocs.org/sustainability/advertising/">Sponsored</a><span> · </span><a href="https://docs.readthedocs.io/en/latest/ethical-advertising.html">Ads served ethically</a></em></small></div></div><img src="Specifications%20%E2%80%94%20Buildozer%200.11%20documentation_files/a.svg" style="display: none;"></div></div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="https://buildozer.readthedocs.io/en/latest/index.html">Buildozer</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="https://buildozer.readthedocs.io/en/latest/index.html">Docs</a> »</li>
+        
+      <li>Specifications</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/kivy/buildozer//blob/master/docs/source/specifications.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="specifications">
+<h1>Specifications<a class="headerlink" href="#specifications" title="Permalink to this headline">¶</a></h1>
+<p>This document explains in detail all the configuration tokens you can use in
+<cite>buildozer.spec</cite>.</p>
+<div class="section" id="section-app">
+<h2>Section [app]<a class="headerlink" href="#section-app" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first"><cite>title</cite>: String, title of your application.</p>
+<p>It might be possible that some characters are not working depending on the
+targeted platform. It’s best to try and see if everything works as expected.
+Try to avoid too long titles, as they will also not fit in the title
+displayed under the icon.</p>
+</li>
+<li><p class="first"><cite>package.name</cite>: String, package name.</p>
+<p>The Package name is one word with only ASCII characters and/or numbers. It
+should not contain any special characters. For example, if your application
+is named <cite>Flat Jewels</cite>, the package name can be <cite>flatjewels</cite>.</p>
+</li>
+<li><p class="first"><cite>package.domain</cite>: String, package domain.</p>
+<p>Package domain is a string that references the company or individual that
+did the app. Both domain+name will become your application identifier for
+Android and iOS, choose it carefully. As an example, when the Kivy`s team
+is publishing an application, the domain starts with <cite>org.kivy</cite>.</p>
+</li>
+<li><p class="first"><cite>source.dir</cite>: String, location of your application sources.</p>
+<p>The location must be a directory that contains a <cite>main.py</cite> file. It defaults
+to the directory where <cite>buildozer.spec</cite> is.</p>
+</li>
+<li><p class="first"><cite>source.include_exts</cite>: List, file extensions to include.</p>
+<p>By default, not all files in your <cite>source.dir</cite> are included, but only some
+of them (<cite>py,png,jpg,kv,atlas</cite>), depending on the extension. Feel free to
+add your own extensions, or use an empty value if you want to include
+everything.</p>
+</li>
+<li><p class="first"><cite>source.exclude_exts</cite>: List, file extensions to exclude.</p>
+<p>In contrary to <cite>source.include_exts</cite>, you could include all the files you
+want except the ones that end with an extension listed in this token. If
+empty, no files will be excluded based on their extensions.</p>
+</li>
+<li><p class="first"><cite>source.exclude_dirs</cite>: List, directories to exclude.</p>
+<p>Same as <cite>source.exclude_exts</cite>, but for directories. You can exclude your
+<cite>tests</cite> and <cite>bin</cite> directory with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span><span class="o">.</span><span class="n">exclude_dirs</span> <span class="o">=</span> <span class="n">tests</span><span class="p">,</span> <span class="nb">bin</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><cite>source.exclude_patterns</cite>: List, files to exclude if they match a pattern.</p>
+<p>If you have a more complex application layout, you might need a pattern to
+exclude files. It also works if you don’t have a pattern. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span><span class="o">.</span><span class="n">exclude_patterns</span> <span class="o">=</span> <span class="n">license</span><span class="p">,</span><span class="n">images</span><span class="o">/</span><span class="n">originals</span><span class="o">/*</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><cite>version.regex</cite>: Regex, Regular expression to capture the version in
+<cite>version.filename</cite>.</p>
+<p>The default capture method of your application version is by grepping a line
+like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">__version__</span> <span class="o">=</span> <span class="s2">"1.0"</span>
+</pre></div>
+</div>
+<p>The <cite>1.0</cite> will be used as a version.</p>
+</li>
+<li><p class="first"><cite>version.filename</cite>: String, defaults to the main.py.</p>
+<p>File to use for capturing the version with <cite>version.regex</cite>.</p>
+</li>
+<li><p class="first"><cite>version</cite>: String, manual application version.</p>
+<p>If you don’t want to capture the version, comment out both <cite>version.regex</cite>
+and <cite>version.filename</cite>, then put the version you want directly in the
+<cite>version</cite> token:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># version.regex =</span>
+<span class="c1"># version.filename =</span>
+<span class="n">version</span> <span class="o">=</span> <span class="mf">1.0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><cite>requirements</cite>: List, Python modules or extensions that your application
+requires.</p>
+<p>The requirements can be either a name of a recipe in the Python-for-android
+project, or a pure-Python package. For example, if your application requires
+Kivy and requests, you need to write:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">requirements</span> <span class="o">=</span> <span class="n">kivy</span><span class="p">,</span><span class="n">requests</span>
+</pre></div>
+</div>
+<p>If your application tries to install a Python extension (ie, a Python
+package that requires compilation), and the extension doesn’t have a recipe
+associated to Python-for-android, it will not work. We explicitly disable
+the compilation here. If you want to make it work, contribute to the
+Python-for-android project by creating a recipe. See <a class="reference internal" href="https://buildozer.readthedocs.io/en/latest/contribute.html"><span class="doc">Contribute</span></a>.</p>
+</li>
+<li><p class="first"><cite>garden_requirements</cite>: List, Garden packages to include.</p>
+<p>Add here the list of Kivy’s garden packages to include. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">garden_requirements</span> <span class="o">=</span> <span class="n">graph</span>
+</pre></div>
+</div>
+<p>Please note that if it doesn’t work, it might be because of the garden
+package itself. Refer to the author of the package if he already tested
+it on your target platform, not us.</p>
+</li>
+<li><p class="first"><cite>presplash.filename</cite>: String, loading screen of your application.</p>
+<p>Presplash is the image shown on the device during application loading.
+It is called presplash on Android, and Loading image on iOS. The image might
+have different requirements depending the platform. Currently, Buildozer
+works well only with Android, iOS support is not great on this.</p>
+<p>The image must be a JPG or PNG, preferable with Power-of-two size, e.g., a
+512x512 image is perfect to target all the devices. The image is not fitted,
+scaled, or anything on the device. If you provide a too-large image, it might
+not fit on small screens.</p>
+</li>
+<li><p class="first"><cite>icon.filename</cite>: String, icon of your application.</p>
+<p>The icon of your application. It must be a PNG of 512x512 size to be able to
+cover all the various platform requirements.</p>
+</li>
+<li><p class="first"><cite>orientation</cite>: String, orientation of the application.</p>
+<p>Indicate the orientation that your application supports. Defaults to
+<cite>landscape</cite>, but can be changed to <cite>portrait</cite> or <cite>all</cite>.</p>
+</li>
+<li><p class="first"><cite>fullscreen</cite>: Boolean, fullscreen mode.</p>
+<p>Defaults to true, your application will run in fullscreen. Means the status
+bar will be hidden. If you want to let the user access the status bar,
+hour, notifications, use 0 as a value.</p>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="https://buildozer.readthedocs.io/en/latest/contribute.html" class="btn btn-neutral float-right" title="Contribute" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="https://buildozer.readthedocs.io/en/latest/quickstart.html" class="btn btn-neutral float-left" title="Quickstart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr><div><div id="rtd-5468app9" class="ethical-rtd"></div></div>
+
+  <div role="contentinfo">
+    <p>
+        © Copyright 2014, Kivy's Developers
+      
+        <span class="commit">
+          Revision <code>2fb43997</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions"><!-- Inserted RTD Footer -->
+
+<div class="injected">
+
+  
+
+      
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+         <strong> 
+        <dd><a href="https://buildozer.readthedocs.io/en/latest/specifications.html">latest</a></dd>
+         </strong> 
+        
+        
+        <dd><a href="https://buildozer.readthedocs.io/en/stable/specifications.html">stable</a></dd>
+        
+        
+      </dl>
+      
+      
+
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="https://buildozer.readthedocs.io/_/downloads/en/latest/pdf/">PDF</a></dd>
+        
+        <dd><a href="https://buildozer.readthedocs.io/_/downloads/en/latest/htmlzip/">HTML</a></dd>
+        
+        <dd><a href="https://buildozer.readthedocs.io/_/downloads/en/latest/epub/">Epub</a></dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://readthedocs.org/projects/buildozer/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/buildozer/builds/">Builds</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/buildozer/downloads/">Downloads</a>
+        </dd>
+      </dl>
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/kivy/buildozer/blob/master/docs/source/specifications.rst">View</a>
+        </dd>
+        
+        <dd>
+          <a href="https://github.com/kivy/buildozer/edit/master/docs/source/specifications.rst">Edit</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="//readthedocs.org/projects/buildozer/search/" method="get">
+              <input type="text" name="q" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+      
+
+
+
+      <hr>
+      
+        <small>
+          <span>Hosted by <a href="https://readthedocs.org/">Read the Docs</a></span>
+          <span> · </span>
+          <a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+        </small>
+      
+
+      
+
+</div>
+</div>
+  </div>
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+
+<div id="rtd-ibl75yjs"></div></body></html>

@@ -1,0 +1,216 @@
+Squire:
+
+<ListCheckbox@OneLineAvatarIconListItem>:
+    icon: 'laptop'
+    MyCheckbox:
+
+<BackLayerItem>:
+    size_hint_y: None
+    height: self.minimum_height
+    spacing: "10dp"
+
+    canvas:
+        Color:
+            rgba: root.theme_cls.primary_color
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+
+    MDIconButton:
+        icon: root.icon
+        theme_text_color: "Custom"
+        text_color: 1, 1, 1, .5
+
+    MDLabel:
+        text: root.text
+        color: 1, 1, 1, .5 
+        
+<Squire>:
+    #darkswitch: dark_mode_switch
+    search: search
+    mdlist: mdlist
+    id: main
+
+    Screen:
+        MDBackdrop:
+            id:backdrop
+            left_action_items: [['menu', lambda x: self.open()]]
+            title: "Squire"
+            header_text: bottomnav.ids.tab_manager.current
+
+            MDBackdropBackLayer:
+                id: backlayer
+                ScrollView:
+                    GridLayout:
+                        cols:1
+                        BackLayerItem:
+                            icon: 'laptop'
+                            text:'bliterer'
+                        BackLayerItem:
+                            text:'vdsd'
+                        # ListCheckbox:
+                        #     text: 'Dark Mode'
+                        #     MDCheckbox:
+                        #         id: dark_mode_switch
+                        #         size_hint: (0.1, 0.1)
+                        #         pos_hint: {'center_x': .5}
+                        #         on_touch_up: 
+                        #             root.free()
+                        #             self.state: "down" if self.active else "normal"
+                        #             self.update_icon()
+
+            MDBackdropFrontLayer:
+                #MyBackdropFrontLayer:
+                backdrop: backdrop
+                backlayer: backlayer
+                #MDToolbar:
+                #    id: toolbar
+                #    title: 'Search' #if self.ids.tab_manager.current.name==files1 else "Map"
+                md_bg_color: app.theme_cls.primary_color
+                #    background_palette: 'Primary'
+                #    background_hue: '500'
+                #    elevation: 100
+                left_action_items: [['android', lambda x: print("Yeah,yeah")]]
+
+                MDBottomNavigation:
+                    id: bottomnav
+
+                    MDBottomNavigationItem:
+                        name: 'Search'
+                        text: 'Search'
+                        icon: 'magnify'
+                        #on
+
+                        BoxLayout:
+                            orientation: 'vertical'
+                            size_hint_x: 0.90
+                            pos_hint: {'center_x': 0.5, 'top':0.95}
+
+                            BoxLayout:
+                                size_hint_y: None
+                                height:self.minimum_height
+
+                                MDIconButton:
+                                    icon:'magnify'
+                                MDTextField:
+                                    id: search
+                                    hint_text: 'Search'
+                                    focus:True
+                                    on_text: root.locationSearch() if self.text!='' else print()
+
+                            ScrollView:
+                                do_scroll_x: False
+                                MDList:
+                                    id: mdlist
+
+
+                            # MDLabel:
+                            #     font_style: 'Body1'
+                            #     theme_text_color: 'Primary'
+                            #     text: 'Toggle to set custom panel color'
+                            #     halign: 'center'
+
+                            # MDSwitch:
+                            #     size_hint: None, None
+                            #     size: dp(36), dp(48)
+                            #     pos_hint: {'center_x': .5}
+                            #     on_active:
+                            #         panel.panel_color = \
+                            #         [0.2980392156862745, 0.2823529411764706, 0.32941176470588235, 1] \
+                            #         if self.active else app.theme_cls.bg_dark
+
+                    MDBottomNavigationItem:
+                        name: 'Map'
+                        text: 'Map'
+                        icon: 'map'
+
+                        MapView:
+                            id: map
+                            map_source:'osm'
+                            lat: 9.5328
+                            lon: 6.449
+                            zoom:18
+
+                            MapMarkerPopup:
+                                lat: 9.5328
+                                lon: 6.449
+
+                                Bubble:
+                                    Label:
+                                        text:"bliesche"
+
+
+
+<DialogDev>:
+    size_hint: None, None
+    height: Window.height * 60 / 100
+    width: Window.width * 90 / 100
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "10dp"
+
+        MDLabel:
+            text: "Developers"
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: self.theme_cls.primary_color
+            font_style: "H4"
+            bold: True
+            size_hint_y: None
+            height: self.texture_size[1]
+
+        MDSeparator:
+
+        ScrollView:
+            bar_width: 0
+
+            GridLayout:
+                cols: 1
+                size_hint_y: None
+                height: self.minimum_height
+                padding: "10dp"
+
+                TwoLineLeftAvatarItem:
+                    icon: 'account'
+                    secondary_text: "https://twitter.com/TerdooG"
+                    text: "Anaana George"
+
+
+<DialogLicense>:
+    size_hint: None, None
+    height: Window.height * 90 / 100
+    width: Window.width * 90 / 100
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "10dp"
+        padding: 0, 0, 0, "10dp"
+
+        MDLabel:
+            text: "KivyMD"
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: self.theme_cls.primary_color
+            font_style: "H4"
+            bold: True
+            size_hint_y: None
+            height: self.texture_size[1]
+
+        MDSeparator:
+
+        ScrollView:
+            bar_width: 0
+
+            GridLayout:
+                cols: 1
+                size_hint_y: None
+                height: self.minimum_height
+                padding: "10dp"
+
+                MDLabel:
+                    id: text_label
+                    markup: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    font_style: "Caption"

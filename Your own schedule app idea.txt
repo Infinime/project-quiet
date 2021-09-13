@@ -1,0 +1,21 @@
+The google, linked-in, a futminna PA app.
+
+*search locations, places, departments, events, etc and get a detailed information about the subject.
+
+* search for locations on campus and get directed via google maps or another suitable map API.
+
+* search people and get info that the person makes available to the public (through the persons portfolio).
+
+*find and get friend location via a map.
+*create a portfolio for yourself and make the whole school see and know you.
+
+*get to meet and know more people through their portfolio.
+
+* Possible app names:
+• zeta
+• squire
+• O-rider
+• Aide:- Terdoo likes this one… 
+• gofer
+• lexicon
+

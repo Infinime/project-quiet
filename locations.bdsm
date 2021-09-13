@@ -1,0 +1,217 @@
+{
+	"Auditorium": {
+		"class": "lectures",
+		"shortdesc": "Also known as the Engineering Lecture Theatre 2 or LT2, this is where most 100level Engineering classes take place.",
+		"longdesc": "This is one of the most used Lecture Halls in FUTMinna. Located on the other side ITS from the Library, this is where 100 level Engineers recieve their lectures. Bike fee from any hostel to here is about N30 - N50, so it's advisable to use bike unless you're totally broke."
+	},
+	"Bus Park": {
+		"class": "utility",
+		"shortdesc": "Main transport hub in Gidan Kwano.",
+		"longdesc": "On the main road from the gate, opposite the Fire Station and Search FM, this is where you should start if you're planning on going to town. A bus from school costs between N100 and N200. It starts from Gidan Kwano and stop at Bosso Campus. After paying, you can stop at any of three bus stops; either at the AYM Shafa Filling Station in Kpakungu, the New Market in Minna, or the final bus stop in Bosso. Everyone pays the same fare no matter where they stop, but the fare is cheaper than a keke or a bike."
+	},
+	"CODeL Building": {
+		"class": "e-learning",
+		"shortdesc": "The school's Centre for Open Distance and e-Learning.",
+		"longdesc": ""
+	},
+	"Chapel Of Grace": {
+		"class": "religion",
+		"shortdesc": "The place of worship for the Pentecostal christians on campus",
+		"longdesc": "The Chapel Of Grace is where the school's Fellowship of Christian Students(FCS) is based. "
+	},
+	"Chemical Engineering Building": {
+		"class": "faculty",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Coke Villa": {
+		"class": "restaurants",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Convocation Square": {
+		"class": "convocation",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Engineering Lecture Theatre 1": {
+		"class": "lectures",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Engineering Lecture Theatre 2": {
+		"class": "lectures",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Fire Station": {
+		"class": "fire",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Gate": {
+		"class": "gate",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Golf Course": {
+		"class": "sports",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"ITS": {
+		"class": "ict",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Indoor Sports Complex": {
+		"class": "sports",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Iya": {
+		"class": "restaurants",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Kings' Corner": {
+		"class": "restaurants",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Library": {
+		"class": "library",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Mai Shayi": {
+		"class": "restaurants",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Mosque": {
+		"class": "religion",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"NFCS Chapel": {
+		"class": "religion",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"New Girls' Hostel": {
+		"class": "hostels",
+		"shortdesc": "Girls' hostel, between the Old Boys' hostel Block B and the Ultra Modern Market",
+		"longdesc": "While certainly newer than the original Girls' Hostel, the name of this place is somewhat misleading, as the Girls' Newest Hostel was constructed after this one. It is a decent place to stay on campus, as you're relatively close to other school buildings and the Ultra Modern Market. The hostel is available at N? ."
+	},
+	"New Search FM Lecture Theatre": {
+		"class": "lectures",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Newest Hostel": {
+		"class": "hostels",
+		"shortdesc": "The best place to stay on campus; located behind the Old Girls' Hostel",
+		"longdesc": "The TETFund Special Intervention Hostel's construction started in 2013. Accomodation in this hostel comes at a relatively expensive N80,000 per year for a room for four and N100,000 for a room for two. \nThat money is not wasted, though, as the rooms come with a bed, a pillow, a wardrobe, an Air Conditioning unit, two fans and a private bathroom/toilet. There is also solar power, so there is always light. Since the hostels are new, they are somewhat remote and cannot be accessed easily from classes or the gate as the roads to and from the hostels are currently in a state of disrepair. \nThe distance from this hostel to the Auditorium is about 2 kilometres, and bikes can be scarce sometimes."
+	},
+	"Old Boys' Hostel": {
+		"class": "hostels",
+		"shortdesc": "Consists of two blocks next to each other with the Mai Shayi in between",
+		"longdesc": "The Old Boys' Hostel has two wings; Block A and Block B. Block A is the one closer to Coke Villa, while Block B is closer to the New Girls' Hostel."
+	},
+	"Old Girls' Hostel": {
+		"class": "hostels",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+    "PTDF Building":{
+        "class":"faculty",
+        "shortdesc":"",
+        "longdesc":""
+    },
+	"SAAT Building": {
+		"class": "faculty",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"SEET Building": {
+		"class": "faculty",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"SEMT Building": {
+		"class": "faculty",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"SET Building": {
+		"class": "faculty",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"SICT Building": {
+		"class": "faculty",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"School Field": {
+		"class": "sports",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"School Hospital": {
+		"class": "hospital",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"School Post Office": {
+		"class": "post office",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"School Sports Arena": {
+		"class": "sports",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Search FM": {
+		"class": "radio",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Senate Building": {
+		"class": "senate",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Staff Quarters": {
+		"class": "hostels",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"TETFund Building": {
+		"class": "faculty",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Toilets": {
+		"class": "toilets",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"Ultra Modern Market": {
+		"class": "markets",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"WASCAL": {
+		"class": "faculty",
+		"shortdesc": "",
+		"longdesc": ""
+	},
+	"e-Test Centre": {
+		"class": "e-learning",
+		"shortdesc": "",
+		"longdesc": ""
+	}
+}
